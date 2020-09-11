@@ -1,0 +1,313 @@
+body {
+  background: rgba(30, 30, 30, 0.93);
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.header {
+  background: greenyellow;
+  border-radius: 10px;
+  width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  text-align: left;
+  animation-name: example;
+  animation: example 3s infinite;
+}
+
+@keyframes example {
+  from {
+    background-color: greenyellow;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+.logo {
+  color: yellow;
+  width: 250px;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 950px;
+  }
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 950px;
+  }
+}
+
+.container {
+  background: white;
+  width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.Menu {
+  font-family: Monotype Corsiva;
+  border-radius: 10px;
+  background: blueviolet;
+  width: 350px;
+  height: 1000px;
+  font-size: 25px;
+
+  padding: 10px;
+  float: left;
+}
+.content {
+  border-radius: 10px;
+  width: 830px;
+  float: left;
+  padding: 10px;
+  background: #e0e0e0;
+}
+.footer {
+  background: cyan;
+  clear: left;
+  width: 1200px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexContainer {
+  display: -webkit-flex;
+  -webkit-justify-content: flex-start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header2 {
+  background: greenyellow;
+  border-radius: 10px;
+  height: 40px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.BUTTONS {
+  font-weight: bold;
+  margin-top: -40px;
+  margin-left: auto;
+  margin-right: 0;
+  color: white;
+  width: 600px;
+  display: -webkit-flex;
+  -webkit-justify-content: flex-start;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button1:hover {
+  background: yellow;
+  color: red;
+}
+.button2:hover {
+  background: yellow;
+  color: red;
+}
+.button3:hover {
+  background: yellow;
+  color: red;
+}
+
+.button1 {
+  background: blue;
+  border-radius: 20px;
+  padding: 5px;
+}
+.button2 {
+  background: blue;
+  border-radius: 20px;
+  padding: 5px;
+}
+.button3 {
+  background: blue;
+  border-radius: 20px;
+  padding: 5px;
+}
+@media (min-width: 768px) and (max-width: 1400px) {
+  .container {
+    background: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .header2 {
+    background: greenyellow;
+    border-radius: 10px;
+    height: 40px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  .header {
+    background: greenyellow;
+    border-radius: 10px;
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    text-align: left;
+    animation-name: example;
+    animation: example 3s infinite;
+  }
+  .container {
+    background: white;
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    color: yellow;
+    width: 250px;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 300px;
+    }
+  }
+  @keyframes mymove {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 300px;
+    }
+  }
+  .content {
+    border-radius: 10px;
+    width: 430px;
+    float: left;
+    padding: 10px;
+    background: #e0e0e0;
+
+    float: left;
+  }
+  .footer {
+    background: cyan;
+    clear: left;
+    width: 800px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    background: white;
+    width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .header2 {
+    background: greenyellow;
+    border-radius: 10px;
+    height: 40px;
+    width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  .header {
+    background: greenyellow;
+    border-radius: 10px;
+    width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    text-align: left;
+    animation-name: example;
+    animation: example 3s infinite;
+  }
+
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    color: yellow;
+    width: 250px;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 300px;
+    }
+  }
+  @keyframes mymove {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 300px;
+    }
+  }
+  .content {
+    border-radius: 10px;
+    width: 430px;
+    float: left;
+    padding: 10px;
+    background: #e0e0e0;
+
+    float: left;
+  }
+  .footer {
+    background: cyan;
+    clear: left;
+    width: 767px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Menu {
+    display: none;
+  }
+}
